@@ -36,7 +36,7 @@ func createClient(mongoUri string) *mongo.Client {
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("Connected to MongoDB")
+	log.Println("Connected to MongoDB: " + opts.GetURI())
 	return client
 }
 
